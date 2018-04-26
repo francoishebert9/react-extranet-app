@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<script>var EEContext={environment:{baseCdnUrl:"https://content.secureweb.ia.ca/extranet"}, experience:{companyCode:"0", company:"IA",userType: "C"}, language:"fr-CA", keepalive:30 };</script>
+	<ee-local-only>
+		<script>
+			var EEContext={
+					environment:{
+						baseCdnUrl:"https://content.secureweb.ia.ca/extranet"
+					}, 
+					experience:{
+						companyCode:"0", 
+						company:"IA",
+						userType: "C"
+					}, 
+					language:"fr-CA", 
+					keepalive:30 
+				};
+		</script>
+	</ee-local-only>
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -11,11 +27,11 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<link rel="stylesheet" href="https://content.secureweb.ia.ca/extranet/styles/ia/2/extranet.css?[ee-insert-minor]">
-	<script src="https://content.secureweb.ia.ca/extranet/scripts/eecore/1/eecore.min.js?minor=1.0.2"></script>
-    <script src="https://content.secureweb.ia.ca/extranet/scripts/eelayout/1/eelayout.min.js?minor=1.0.2"></script>
-    <script src="https://content.secureweb.ia.ca/extranet/scripts/eewidgets/1/eewidgets.js?minor=1.0.2"></script>
-    <script src="https://content.secureweb.ia.ca/extranet/scripts/eestatistics/1/eestatistics.min.js?minor=1.0.2"></script>
+	<link rel="stylesheet" href="https://content.secureweb.ia.ca/extranet/styles/ia/2/extranet.css?ee-minor-version">
+	<script src="https://content.secureweb.ia.ca/extranet/scripts/eecore/1/eecore.min.js?ee-minor-version"></script>
+    <script src="https://content.secureweb.ia.ca/extranet/scripts/eelayout/1/eelayout.min.js?ee-minor-version"></script>
+    <script src="https://content.secureweb.ia.ca/extranet/scripts/eewidgets/1/eewidgets.js?ee-minor-version"></script>
+    <script src="https://content.secureweb.ia.ca/extranet/scripts/eestatistics/1/eestatistics.min.js?ee-minor-version"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -49,6 +65,7 @@
 				-->
 			</div>
 		</div>
+		<ee-footer></ee-footer>
 	</div>
   </body>
   </html>

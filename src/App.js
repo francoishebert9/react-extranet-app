@@ -8,9 +8,10 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import {EEContext} from './EEContext';
 import React from 'react';
 
-const Home = () => <h1>Home</h1>;
+const Home = () => <h1>{EEContext.language}</h1>;
 const About = () => <h1>About</h1>;
 const Contact = () => <h1>Contact</h1>;
 
